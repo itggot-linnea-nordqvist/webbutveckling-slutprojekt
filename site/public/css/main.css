@@ -1,0 +1,47 @@
+body{
+    margin:0;
+}
+
+.wrapper{
+    min-height: auto;
+    display: grid;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+    "header"
+    "main"
+}
+
+.header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+.home{
+    max-height: 100vh;
+    grid-area: main;
+    margin: auto 10% auto 10%;
+    padding: 50% 0 50% 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box4"
+}
+
+.box{
+    grid-area: box1 box2 box3;
+    position: relative;
+    padding-top: 100%;
+    background-color: aquamarine;
+    margin:10px;
+    border-radius: 50%
+}
+
+p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
