@@ -11,13 +11,22 @@
 <body>
     <div class="wrapper">
         <div class="header">
-                <i class="material-icons" id="menu" onclick="menu()">menu</i>
 
+                <i class="material-icons" id="menu" onclick="menu()">menu</i>
+                <p>Brain or not </p>
+                <div class="animation"><div class="moving"></div></div>
         </div>
         <div class="main">          
             <%= yield %>
         </div>
     </div>
-
+    <nav>
+        
+        <i class="material-icons" onclick="menu()" id="bort">clear</i>
+        <ul>
+            <a href="home.html">Home Page</a></li>
+        </ul>
+    </nav>
+    <script src="js/main.js"></script>
 </body>
 </html>
