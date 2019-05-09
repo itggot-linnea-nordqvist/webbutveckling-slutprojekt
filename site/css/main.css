@@ -120,8 +120,11 @@ p{
 }
 
 .profil{
+    transition: all 3s;
     height: 70vh;
     width: 40vh;
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
     top: auto;
     background-color: coral;
@@ -133,27 +136,75 @@ p{
 .info{
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     background-color: rgba(255, 255, 255, 0.692);
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
 }
 
 .choose{
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: absolute;
     bottom: 0;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-/* .frame{
-    height: 5vh;
-    width: 5vh;
+.frame{
+    height: 6vh;
+    width: 6vh;
     border-radius: 50%;
     border-width: 2px;
     border-style: solid;
     border-color: black;
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thirdp{ 
+    background-color: darkorchid;
+    z-index: 2;
+}
+
+#firstp{
+    z-index: 10;
+}
+
+#secondp{
+    z-index: 4;
+}
+.placering{
+    left: -100vw;
+}
+
+.red{
+    height: 100%;
+    width: 100%
+}
+
+.redfilter{
+    background-color: rgb(255, 0, 0);
+    opacity: 0.7;
+}
+.green{
+    height: 100%;
+    width: 100%
+}
+
+.greenfilter{
+    background-color: rgb(123, 255, 0);
+    opacity: 0.7;
+}
+
+h1{
+    margin: 5px 0 5px 10px;
+}
+
+#like p{
+    font-size: 10px;
+    margin: 0 10px 0 10px;
+}
