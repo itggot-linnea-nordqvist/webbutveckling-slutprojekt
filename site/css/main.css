@@ -630,5 +630,8 @@ i:hover{
     .match{
         border-right-style: solid;
     }
+    .reklamhigh .bort{
+        visibility: visible;
+    }
     
 }
