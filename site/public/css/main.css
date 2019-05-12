@@ -497,10 +497,6 @@ p{
         font-size: 90px !important;
     }
 
-    #layout li{
-        float: left;
-    }
-
     #layout li a{
         padding: auto;
         margin: auto;
