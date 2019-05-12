@@ -17,7 +17,6 @@ function swipe12(event){
     red.classList.toggle("greenfilter")
 }
 
-
 function swipe2(event){
     let swipe=document.querySelector("#secondp")
     swipe.classList.toggle("placering")
@@ -34,7 +33,6 @@ function swipe22(event){
 
 }
 
-
 function swipe3(event){
     let swipe=document.querySelector("#thirdp")
     swipe.classList.toggle("placering")
@@ -42,6 +40,7 @@ function swipe3(event){
     red.classList.toggle("redfilter")
 
 }
+
 function swipe32(event){
     let swipe=document.querySelector("#thirdp")
     swipe.classList.toggle("placering")

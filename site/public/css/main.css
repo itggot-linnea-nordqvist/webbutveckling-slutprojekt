@@ -11,121 +11,6 @@ body{
     "main"
 }
 
-nav{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    background-color: rgb(236, 236, 236);
-    transition: all 1s;
-    z-index: 30;
-}
-
-.quiz{
-    display: grid;
-    grid-template-rows: 70px auto 100px 100px;
-    grid-template-columns: 50% 50%;
-    grid-row-gap: 10px;
-    grid-template-areas: 
-    "dagens dagens"
-    "Ask Ask";
-}
-
-.dagens{
-    grid-area: dagens;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.reklam{
-    height: 100px;
-    width: 90vw;
-    background-color: coral;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: -14px 15px 15px -6px rgba(0,0,0,0.47);
-    display: flex;
-    align-items: center;
-
-}
-
-.bort{
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-
-}
-
-.question{
-    grid-area: Ask;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 20px 0;
-    border: 3px;
-    border-color: rgb(165, 165, 165);
-    border-style: solid;
-    box-shadow: -14px 15px 15px 1px rgba(0,0,0,0.72);
-
-}
-
-.alt{
-    margin: 10px;
-    border: 3px;
-    border-color: rgb(165, 165, 165);
-    border-style: solid;
-    box-shadow: -14px 15px 15px 1px rgba(0,0,0,0.72);
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.korrekt{
-    height: 100%;
-    width: 100vw;
-    background-color: rgb(0, 204, 0);
-}
-
-#korrekt p, #fel p{
-    padding:70px 30px 100px 30px;
-    text-align: center
-}
-
-.fel{
-    height: 100%;
-    width: 100vw;
-    background-color: red;
-}
-
-.test{
-    left: 0;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-#reklam p{
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-#alt a{
-    margin-left: 20px;
-    
-}
-
 .header{
     grid-area: header;
     display: grid;
@@ -135,159 +20,6 @@ a{
     align-items: center;
     column-gap: 10px;
 }
-
-.sms{
-    height: auto;
-    display: grid;
-    grid-template-columns: 0 100% 0;
-}
-
-.meddelande{
-    display:grid;
-    grid-template-columns: 10% auto;
-    grid-template-areas: "titel titel"
-}
-
-.notis, .titel, .bilder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.plupp{
-    background-color: rgb(190, 190, 190);
-    height: 3vw;
-    width: 3vw;
-    border-radius: 50%;
-}
-
-#aktiv{
-    background-color: red;
-}
-
-.hej{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.hej p{
-    color: rgb(179, 179, 179);
-    font-size: 30px;
-}
-
-.titel{
-    grid-area: titel;
-    height: 70px;
-}
-.match{
-    height: 100px;
-    border-top-style: solid;
-    border-left-style: solid;
-    border-color: rgb(194, 194, 194);
-    border-width: 4px;
-    display: grid;
-    grid-template-columns: 80px auto;
-}
-.bilder{
-    border-right-style: solid;
-    border-color: rgb(194, 194, 194);
-    border-width: 4px;
-
-}
-
-#bilder i{
-    color: grey;
-    font-size: 60px !important;
-}
-.match:nth-child(15){
-    border-bottom-style: solid;
-}
-
-.egenprofil{
-    height: auto;
-    padding: 10px 70px 160px 20px;
-    background-color: lightcoral;
-    gap: 10px;
-    font-family: 'Macondo Swash Caps', cursive;
-    display: grid;
-    grid-template-rows: 80px auto auto auto auto auto;
-    grid-template-columns: 40% auto;
-    grid-template-areas: 
-    "bild namn"
-    "bild lista"
-    "info info"
-    "about about"
-    "search search"
-    "fact fact"
-}
-
-.edit{
-    height: 20px;
-    width: 40px;
-    position: absolute;
-    right: -50px;
-    bottom: 0;
-    background-color: rgb(216, 216, 216);
-    border-radius: 10%;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.information{
-    grid-area: info;
-    background-color: white;
-    font-size: 10px;
-    padding: 10px;
-    position: relative;
-}
-#lista li:nth-child(2n){
-    margin-left: 10px;
-}
-
-.funfact{
-    grid-area: fact;
-    background-color: white;
-    font-size: 10px;
-    padding: 10px;
-    position: relative;
-
-}
-
-.about{
-    grid-area: about;
-    background-color: white;
-    padding: 10px;
-    position: relative;
-
-}
-
-.searching{
-    grid-area: search;
-    background-color: white;
-    padding: 10px;
-    position: relative;
-
-}
-
-h2, h3{
-    margin-left: 10px;
-}
-
-.profilbild{
-    grid-area: bild;
-    background-image: url(../img/egenprofilM.jpg)
-}
-.lista{
-    grid-area: lista;
-    background-color: white;
-    position: relative;
-}
-
 .animation{
     width: 30vw;
     height: 40px;
@@ -312,17 +44,69 @@ h2, h3{
     100% {background-color:white; left:0px; top:0px;}
 }
 
+.notis, .titel, .bilder, .home, .box, .like, .frame, .dagens, .alt, .edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: rgb(236, 236, 236);
+    transition: all 1s;
+    z-index: 50;
+}
+
+.test{
+    left: 0;
+}
+
+#layout ul{
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#layout li a{
+    display: block;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#layout li a:hover{
+    background-color: rgb(179, 175, 175);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3{
+    margin-left: 10px;
+}
+
+h1{
+    margin: 5px 0 5px 10px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
 p{
     margin: 0 auto 0 auto;
     font-size: 200%;
 }
 
 .home{
-    display: grid;
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
@@ -332,20 +116,6 @@ p{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "box1 box2"
-    "box3 box4"
-}
-
-.box{
-    grid-area: box1 box2 box3;
-    background-color: red;
-    margin:15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 #square .material-icons{
@@ -353,9 +123,10 @@ p{
     font-size: 15vw;
 }
 
-#menu, #bort{
-    font-size: 40px !important;
-    margin-left: 10px;
+.box{
+    background-color: red;
+    margin:15px;
+    border-radius: 50%;
 }
 
 .box:hover{
@@ -365,10 +136,12 @@ p{
 
 .like{
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+}
+
+#like p{
+    font-size: 10px;
+    margin: 0 10px 0 10px;
 }
 
 .profil{
@@ -384,8 +157,28 @@ p{
     border-color: black;
 }
 
-.reklamhigh .bort{
-    visibility: hidden;
+#firstp{
+    z-index: 10;
+    background-image: url(../img/Profil1M.jpg)
+}
+
+#secondp{
+    z-index: 4;
+    background-image: url(../img/Profil2M.jpg)
+}
+
+#thirdp{ 
+    background-image: url(../img/Profil3M.jpg);
+    z-index: 2;
+}
+
+.placering{
+    left: -100vw;
+}
+
+.red, .green{
+    height: 100%;
+    width: 100%
 }
 
 .info{
@@ -408,67 +201,9 @@ p{
     align-items: center;
 }
 
-.frame{
-    height: 6vh;
-    width: 6vh;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#layout ul{
-    overflow: hidden;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#layout li a {
-    display: block;
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-#layout li a:hover{
-    background-color: rgb(179, 175, 175);
-}
-
-
-#thirdp{ 
-    background-image: url(../img/Profil3M.jpg);
-    z-index: 2;
-}
-
-#firstp{
-    z-index: 10;
-    background-image: url(../img/Profil1M.jpg)
-}
-
-#secondp{
-    z-index: 4;
-    background-image: url(../img/Profil2M.jpg)
-}
-.placering{
-    left: -100vw;
-}
-
-.red{
-    height: 100%;
-    width: 100%
-}
-
 .redfilter{
     background-color: rgb(255, 0, 0);
     opacity: 0.7;
-}
-.green{
-    height: 100%;
-    width: 100%
 }
 
 .greenfilter{
@@ -476,13 +211,180 @@ p{
     opacity: 0.7;
 }
 
-h1{
-    margin: 5px 0 5px 10px;
+.frame{
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
-#like p{
+.quiz{
+    display: grid;
+    grid-template-rows: 70px auto 100px 100px;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "dagens dagens"
+    "Ask Ask";
+}
+
+.dagens{
+    grid-area: dagens;
+}
+
+.question{
+    grid-area: Ask;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    border: 3px;
+    border-color: rgb(165, 165, 165);
+    border-style: solid;
+    box-shadow: -14px 15px 15px 1px rgba(0,0,0,0.72);
+}
+
+.alt{
+    margin: 10px;
+    border: 3px;
+    border-color: rgb(165, 165, 165);
+    border-style: solid;
+    box-shadow: -14px 15px 15px 1px rgba(0,0,0,0.72);
+    padding: 20px 0;
+}
+
+#alt a{
+    margin-left: 20px;
+}
+
+.reklam{
+    height: 100px;
+    width: 90vw;
+    background-color: coral;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: -14px 15px 15px -6px rgba(0,0,0,0.47);
+    display: flex;
+    align-items: center;
+}
+
+#reklam p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.bort{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#menu, #bort{
+    font-size: 40px !important;
+    margin-left: 10px;
+}
+
+.reklamhigh .bort{
+    visibility: hidden;
+}
+
+.korrekt{
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(0, 204, 0);
+}
+
+.fel{
+    height: 100%;
+    width: 100vw;
+    background-color: red;
+}
+
+#korrekt p, #fel p{
+    padding:70px 30px 100px 30px;
+    text-align: center
+}
+
+.egenprofil{
+    height: auto;
+    padding: 10px 70px 160px 20px;
+    background-color: lightcoral;
+    gap: 10px;
+    font-family: 'Macondo Swash Caps', cursive;
+    display: grid;
+    grid-template-rows: 80px auto auto auto auto auto;
+    grid-template-columns: 40% auto;
+    grid-template-areas: 
+    "bild namn"
+    "bild lista"
+    "info info"
+    "about about"
+    "search search"
+    "fact fact"
+}
+
+.profilbild{
+    grid-area: bild;
+    background-image: url(../img/egenprofilM.jpg)
+}
+
+.lista{
+    grid-area: lista;
+    background-color: white;
+    position: relative;
+}
+
+.edit{
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    background-color: rgb(216, 216, 216);
+    border-radius: 10%;
     font-size: 10px;
-    margin: 0 10px 0 10px;
+}
+
+.information, .about, .searching, .funfact{
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.information{
+    grid-area: info;
+    font-size: 10px;
+}
+
+#lista li:nth-child(2n){
+    margin-left: 10px;
+}
+
+.about{
+    grid-area: about;
+}
+
+.searching{
+    grid-area: search;
+}
+
+.funfact{
+    grid-area: fact;
+    font-size: 10px;
+}
+
+.sms{
+    height: auto;
+    display: grid;
+    grid-template-columns: 0 100% 0;
 }
 
 .reklamhigh p{
@@ -491,12 +393,77 @@ h1{
     margin-top: 0;
 }
 
+.meddelande{
+    display:grid;
+    grid-template-columns: 10% auto;
+    grid-template-areas: "titel titel"
+}
 
-i:hover{
-    cursor: pointer;
+.titel{
+    grid-area: titel;
+    height: 70px;
+}
+
+.plupp{
+    background-color: rgb(190, 190, 190);
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+}
+
+#aktiv{
+    background-color: red;
+}
+
+.match{
+    height: 100px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-color: rgb(194, 194, 194);
+    border-width: 4px;
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.match:nth-child(15){
+    border-bottom-style: solid;
+}
+
+.bilder{
+    border-right-style: solid;
+    border-color: rgb(194, 194, 194);
+    border-width: 4px;
+}
+
+#bilder i{
+    color: grey;
+    font-size: 60px !important;
+}
+
+.hej{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.hej p{
+    color: rgb(179, 179, 179);
+    font-size: 30px;
 }
 
 @media only screen and (min-device-width:1224px){
+    .wrapper{
+        grid-row-gap: 50px;
+    }    
+
+    nav{
+        height: 50px;
+        position: absolute;
+        top: 80px;
+        left:0;
+        display: flex;
+    }
+
     #firstp{
         background-image: url(../img/Profil1D.jpg)
     }
@@ -520,6 +487,7 @@ i:hover{
     .profilbild{
         background-image: url(../img/egenprofilD.jpg)
     }
+
     .square{
         height: 35vw;
         width: 35vw;
@@ -528,32 +496,20 @@ i:hover{
     #box i{
         font-size: 90px !important;
     }
-    .wrapper{
-        grid-row-gap: 50px;
-    }    
-    nav{
-        height: 50px;
-        position: absolute;
-        top: 80px;
-        left:0;
-        display: flex;
-    }
 
     #layout li{
         float: left;
     }
-    #layout li a {
-        display: block;
-        text-align: center;
+
+    #layout li a{
         padding: auto;
         margin: auto;
-        text-decoration: none;
-        font-size: 30px;
     }
     
     #bort, #menu{
       visibility: hidden;
     }
+
     #layout ul{
         width: 100%;
         position: absolute;
@@ -562,13 +518,13 @@ i:hover{
         justify-content: space-evenly;
         align-items: center;
     }
+
     p{
         font-size: 300%;
     }
 
     .info{
     width: 300px;
-    height: auto;
     padding-bottom: 10px;
     background-color: rgb(255, 255, 255);
     border-style: solid;
@@ -577,23 +533,18 @@ i:hover{
     position: fixed;
     left: -150%;
     }
+
     #like p{
         font-size: 20px;
     }
+
     .quiz{
         grid-template-rows: 70px auto 150px 150px;
         margin-bottom: 150px;
     }
+
     .question{
-        grid-area: Ask;
-        display: flex;
-        justify-content: center;
         padding: 40px 0 40px 0;
-        border: 3px;
-        border-color: rgb(165, 165, 165);
-        border-style: solid;
-        box-shadow: -14px 15px 15px 1px rgba(0,0,0,0.72);
-    
     }
     
     .reklamhigh p{
@@ -615,9 +566,11 @@ i:hover{
         margin: auto;
         position: relative;
     }
+
     .sms{
         grid-template-columns: 23% auto 23%;
     }
+
     .plupp{
         height: 1.5vw;
         width: 1.5vw;
@@ -630,8 +583,8 @@ i:hover{
     .match{
         border-right-style: solid;
     }
+
     .reklamhigh .bort{
         visibility: visible;
     }
-    
 }
