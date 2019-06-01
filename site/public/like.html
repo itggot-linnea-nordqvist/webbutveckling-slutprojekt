@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
 
                 <i class="material-icons" id="menu" onclick="menu()">menu</i>
                 <p>Brain <i>or</i> not </p>
                 <div class="animation"><div class="moving"></div></div>
-        </div>
-        <div class="main">          
+        </header>
+        <main>          
             <div class="like" id="like">
     <div class="profil" id="firstp">
         <div class="red" id="first_red">
             <div class="green" id="first_green">
-                <div class="info">
+                <figcaption>
                     <h1>Sofia Larsson</h1><p><b>Ålder:</b> 18 år <b>IQ:</b> 125 <br>De flesta skulle beskriva mig som en väldigt social person. Jag är stolt feminist, älskar sushi och har som plan att resa för att hitta mig själv och få perspektiv på världen. </p>
-                </div>
+                </figcaption>
                 <div class="choose">
                     <div class="frame"><i class="material-icons" onclick="swipe1()" >thumb_down</i></div>
                     <div class="frame"><i class="material-icons" onclick="swipe12()" >thumb_up</i></div>
@@ -36,9 +36,9 @@
     <div class="profil" id="secondp">
         <div class="red" id="second_red">
             <div class="green" id="second_green">
-                <div class="info">
+                <figcaption>
                     <h1>Karin Johnsson</h1><p><b>Ålder:</b> 104 år <b>IQ:</b> 140 <br>Standard frukost: avokado på macka och en cappuccino. Jag börjar alltid min morgon med en simtur för att kick-starta dagen på ett bra sätt.</p>
-                </div>
+                </figcaption>
                 <div class="choose"> 
                     <div class="frame"><i class="material-icons" onclick="swipe2()" >thumb_down</i></div>
                     <div class="frame"><i class="material-icons" onclick="swipe22()">thumb_up</i></div>
@@ -49,9 +49,9 @@
     <div class="profil" id="thirdp">
         <div class="red" id="third_red">
                 <div class="green" id="third_green"></div>
-            <div class="info">
+            <figcaption>
                 <h1>Jörgen Ek</h1><p><b>Ålder:</b> 53 år <b>IQ:</b> 75 <br>Jag lagar ofta mat till familjen och jag anser starkt att åldern bara är en siffra, känslorna går före. "It is not in the stars to hold our destiny but in ourselves." - Shakespeare</p>
-            </div>
+            </figcaption>
             <div class="choose"> 
                 <div class="frame"><i class="material-icons" onclick="swipe3()" >thumb_down</i></div>
                 <div class="frame"><i class="material-icons" onclick="swipe32()">thumb_up</i></div>
@@ -60,19 +60,19 @@
     </div>
 </div>
 
-        </div>
+        </main>
     </div>
     <nav id="layout">
         
         <i class="material-icons" onclick="menu()" id="bort">clear</i>
         <ul >
-        <li><a href="home.html">Home Page</a></li>
+        <li><a href="index.html">Home Page</a></li>
         <li><a href="like.html">Like or Not</a></li>
         <li><a href="test.html">IQ-Quiz</a></li>
         <li><a href="profil.html">Profil</a></li>
         <li><a href="sms.html">Meddelanden</a></li>
         </ul>
     </nav>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

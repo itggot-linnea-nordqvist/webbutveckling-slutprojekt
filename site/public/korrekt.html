@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
 
                 <i class="material-icons" id="menu" onclick="menu()">menu</i>
                 <p>Brain <i>or</i> not </p>
                 <div class="animation"><div class="moving"></div></div>
-        </div>
-        <div class="main">          
+        </header>
+        <main>          
             <div class="korrekt" id="korrekt">
     <p><b> Grattis!</b> <br><i>Du svarade rätt och har fått +5 IQ att imponera med. <br>Kom tillbaka imorgon för chansen att vinna mer.</i></p>
 </div>
 
 <div class="reklam" id="reklam">
     <p><i> Experterna hatar denna. Nu endast <b>399kr!</b> <br>Erbjudanted gäller i <u>59 minuter</u>  till. <br>Köp <b>NU</b> innan de tar slut!</i></p>
-    <div class="bort">X</div>
+    <div class="bort" onclick="bort()">X</div>
 </div>
-        </div>
+        </main>
     </div>
     <nav id="layout">
         
         <i class="material-icons" onclick="menu()" id="bort">clear</i>
         <ul >
-        <li><a href="home.html">Home Page</a></li>
+        <li><a href="index.html">Home Page</a></li>
         <li><a href="like.html">Like or Not</a></li>
         <li><a href="test.html">IQ-Quiz</a></li>
         <li><a href="profil.html">Profil</a></li>
         <li><a href="sms.html">Meddelanden</a></li>
         </ul>
     </nav>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

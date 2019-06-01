@@ -48,3 +48,7 @@ function swipe32(event){
     red.classList.toggle("greenfilter")
 }
 
+function bort(event){
+    let bort=document.querySelector(".reklam")
+    bort.classList.toggle("visibility")
+}

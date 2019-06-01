@@ -8,13 +8,14 @@ body{
     grid-template-rows: 80px auto;
     grid-template-areas: 
     "header"
-    "main"
+    "main";
+    line-height: 1.6;
 }
 
-.header{
+header{
     grid-area: header;
     display: grid;
-    background-color: rgb(0, 247, 255);
+    background-color: #9fd5ff;
     grid-template-columns: 70px auto auto;
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@ body{
     100% {background-color:white; left:0px; top:0px;}
 }
 
-.notis, .titel, .bilder, .home, .box, .like, .frame, .dagens, .alt, .edit{
+.notis, .titel, .bilder, .home, .box, .frame, .dagens, .alt, .edit, .like{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,6 +60,11 @@ nav{
     background-color: rgb(236, 236, 236);
     transition: all 1s;
     z-index: 50;
+}
+
+nav a{
+    font-variant: small-caps;
+
 }
 
 .test{
@@ -93,6 +99,13 @@ h2, h3{
     margin-left: 10px;
 }
 
+.namn{
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1{
     margin: 5px 0 5px 10px;
 }
@@ -116,6 +129,7 @@ p{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    margin: 0 auto 0 auto
 }
 
 #square .material-icons{
@@ -155,11 +169,14 @@ p{
     border-width: 3px;
     border-style: dotted;
     border-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #firstp{
     z-index: 10;
     background-image: url(../img/Profil1M.jpg)
+    
 }
 
 #secondp{
@@ -181,7 +198,7 @@ p{
     width: 100%
 }
 
-.info{
+figcaption{
     width: 100%;
     height: auto;
     padding-bottom: 10px;
@@ -195,7 +212,7 @@ p{
     height: 60px;
     position: absolute;
     bottom: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -212,8 +229,8 @@ p{
 }
 
 .frame{
-    height: 6vh;
-    width: 6vh;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border-width: 2px;
     border-style: solid;
@@ -259,7 +276,7 @@ p{
 }
 
 .reklam{
-    height: 100px;
+    height: auto;
     width: 90vw;
     background-color: coral;
     position: fixed;
@@ -269,6 +286,11 @@ p{
     box-shadow: -14px 15px 15px -6px rgba(0,0,0,0.47);
     display: flex;
     align-items: center;
+    line-height: normal;
+}
+
+.visibility{
+    visibility: hidden;
 }
 
 #reklam p{
@@ -287,12 +309,16 @@ p{
     justify-content: center;
 }
 
+.bort:hover{
+    cursor: pointer;
+}
+
 #menu, #bort{
     font-size: 40px !important;
     margin-left: 10px;
 }
 
-.reklamhigh .bort{
+aside .bort{
     visibility: hidden;
 }
 
@@ -316,9 +342,9 @@ p{
 .egenprofil{
     height: auto;
     padding: 10px 70px 160px 20px;
-    background-color: lightcoral;
+    background-color: rgb(233, 233, 233);
     gap: 10px;
-    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-rows: 80px auto auto auto auto auto;
     grid-template-columns: 40% auto;
@@ -333,8 +359,26 @@ p{
 
 .profilbild{
     grid-area: bild;
-    background-image: url(../img/egenprofilM.jpg)
+    background-image: url(../img/egenprofilM.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.egenprofil h3{
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+.namn h2{
+    margin:0;
+    font-size: 1.2sem;
+}
+
+#bild{
+    width: 100%;
+    height: auto;
+}    
+
 
 .lista{
     grid-area: lista;
@@ -351,15 +395,21 @@ p{
     background-color: rgb(216, 216, 216);
     border-radius: 10%;
     font-size: 10px;
+    box-shadow:  10px 10px 12px 0px rgba(0,0,0,0.53);
 }
 
-.information, .about, .searching, .funfact{
+.edit p{
+    letter-spacing: normal;
+    text-shadow: none
+}
+
+section, article, .searching, .funfact{
     background-color: white;
     padding: 10px;
     position: relative;
 }
 
-.information{
+section{
     grid-area: info;
     font-size: 10px;
 }
@@ -368,7 +418,7 @@ p{
     margin-left: 10px;
 }
 
-.about{
+article{
     grid-area: about;
 }
 
@@ -377,8 +427,11 @@ p{
 }
 
 .funfact{
+    text-align: center;
     grid-area: fact;
     font-size: 10px;
+    letter-spacing: 3px;
+    text-shadow: 3px 5px 5px rgb(54, 54, 54);
 }
 
 .sms{
@@ -387,7 +440,7 @@ p{
     grid-template-columns: 0 100% 0;
 }
 
-.reklamhigh p{
+aside p{
     font-size:0;
     margin: 0;
     margin-top: 0;
@@ -397,6 +450,9 @@ p{
     display:grid;
     grid-template-columns: 10% auto;
     grid-template-areas: "titel titel"
+}
+.meddelande p{
+    line-height: normal;
 }
 
 .titel{
@@ -419,6 +475,7 @@ p{
     height: 100px;
     border-top-style: solid;
     border-left-style: solid;
+    border-right-style: solid;
     border-color: rgb(194, 194, 194);
     border-width: 4px;
     display: grid;
@@ -440,13 +497,10 @@ p{
     font-size: 60px !important;
 }
 
-.hej{
+#hej{
     display: flex;
     align-items: center;
     padding-left: 10px;
-}
-
-.hej p{
     color: rgb(179, 179, 179);
     font-size: 30px;
 }
@@ -462,6 +516,7 @@ p{
         top: 80px;
         left:0;
         display: flex;
+        background-color: #bebebe
     }
 
     #firstp{
@@ -480,22 +535,45 @@ p{
         padding: 10px 250px 170px 200px;
     }
 
+    .namn{
+        font-size: 2vw;
+    }
+    
+
     .reklam{
         width: 50vw;
     }
 
     .profilbild{
-        background-image: url(../img/egenprofilD.jpg)
+        background-image: url(../img/egenprofilD.jpg);
+        background-repeat: no-repeat;
     }
 
+    #bild{
+        width: auto;
+    }    
+
     .square{
-        height: 35vw;
-        width: 35vw;
+        height: 20vw;
+        width: 80vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;    
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
     }
 
     #box i{
         font-size: 90px !important;
     }
+
+    .box{
+        margin:35px;
+    }
+    
 
     #layout li a{
         padding: auto;
@@ -519,7 +597,7 @@ p{
         font-size: 300%;
     }
 
-    .info{
+    figcaption{
     width: 300px;
     padding-bottom: 10px;
     background-color: rgb(255, 255, 255);
@@ -543,7 +621,7 @@ p{
         padding: 40px 0 40px 0;
     }
     
-    .reklamhigh p{
+    aside p{
         font-size: 30px;
         margin: 10px;
         margin-top: 50px;
@@ -555,12 +633,16 @@ p{
         right: -70px;
     }
     
-    .reklamhigh{
+    aside{
         height: 70%;
         width: 65%;
         background-color: coral;
         margin: auto;
         position: relative;
+    }
+
+    .reklam{
+        padding: 20px 0 20px 0;
     }
 
     .sms{
@@ -580,7 +662,7 @@ p{
         border-right-style: solid;
     }
 
-    .reklamhigh .bort{
+    aside .bort{
         visibility: visible;
     }
 }

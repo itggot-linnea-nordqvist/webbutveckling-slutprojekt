@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header>
 
                 <i class="material-icons" id="menu" onclick="menu()">menu</i>
                 <p>Brain <i>or</i> not </p>
                 <div class="animation"><div class="moving"></div></div>
-        </div>
-        <div class="main">          
+        </header>
+        <main>          
             <div class="egenprofil">
     <div class="profilbild"></div>
-    <div class="namn"><h2>Fia Svensson (Jag)</h2> </div>
+    <div class="namn"><h2>Fia Svensson</h2> </div>
     <div class="lista" id="lista"> <h3>Kategorier:</h3>
         <ul>
             <li><a href="#info"> Information</a></li>
@@ -30,41 +30,41 @@
         </ul>
         <div class="edit"><p>Edit</p></div>
     </div>
-    <div class="information" id="info">
+    <section id="info">
         <p><b>IQ:</b> 110 <br><b>Ålder</b>: 27 <br><b>Bor:</b> Göteborg <br><b>Husdjur:</b> Inga <br><b>Längd:</b> 167 cm</p>
         <div class="edit"><p>Edit</p></div>
-    </div>
-    <div class="about" id="about">
-        <p><h3>Om mig själv</h3>Jag arbetar som barista och de flesta skulle beskriva mig som en väldigt social person. <br> Jag är stolt feminist, älskar sushi och har som plan att resa för att hitta mig själv och få perspektiv på världen. <br> Standard frukost: avokado på macka och en cappuccino. Jag börjar alltid min morgon med en simtur för att kick-starta dagen på ett bra sätt. Jag lagar ofta mat till familjen och jag anser starkt att åldern bara är en siffra, känslorna går före. <br><i> "It is not in the stars to hold our destiny but in ourselves." - Shakespeare</i></p>
+    </section>
+    <article>
+        <p> <h3>Om mig själv</h3>Jag arbetar som barista och de flesta skulle beskriva mig som en väldigt social person. <br> Jag är stolt feminist, älskar sushi och har som plan att resa för att hitta mig själv och få perspektiv på världen. <br> Standard frukost: avokado på macka och en cappuccino. Jag börjar alltid min morgon med en simtur för att kick-starta dagen på ett bra sätt. Jag lagar ofta mat till familjen och jag anser starkt att åldern bara är en siffra, känslorna går före. <br><i> "It is not in the stars to hold our destiny but in ourselves." - Shakespeare</i></p>
         <div class="edit"><p>Edit</p></div>
-    </div>
+    </article>
     <div class="searching" id="searching">
-        <p><h3>Vad jag söker</h3>Jag söker någon som vill resa och utforska världen med mig. <br> Helst ett IQ på högre än genomsnitt för att kunna utmana och hjälpa varandra intellektuellt. <br>Det är ett stort plus om du spelat något intrument då jag finner att dessa människor 90% av fallen är oerhört smarta. Du skall även ha förmågan att kasta saker som jag då kan hämta igen. Vissa kallar detta apport men vi tycker att detta namn på aktiviteten är nedlåtande och uppskattar om du håller dig borta från det. Tiden då människorna bestämde är över och ord som dessa har numera bara en stark koppling till dåtiden.</p>
+        <p> <h3>Vad jag söker</h3>Jag söker någon som vill resa och utforska världen med mig. <br> Helst ett IQ på högre än genomsnitt för att kunna utmana och hjälpa varandra intellektuellt. <br>Det är ett stort plus om du spelat något intrument då jag finner att dessa människor 90% av fallen är oerhört smarta. Du skall även ha förmågan att kasta saker som jag då kan hämta igen. Vissa kallar detta apport men vi tycker att detta namn på aktiviteten är nedlåtande och uppskattar om du håller dig borta från det. Tiden då människorna bestämde är över och ord som dessa har numera bara en stark koppling till dåtiden.</p>
         <div class="edit"><p>Edit</p></div>
     </div>
     <div class="funfact" id="funfact">
-        <p>Jag kan alla <i>Fortnite</i> danserna utantill. </p> <img src="img/FortniteM.jpg" alt="">
+        <p>Jag kan alla <i>Fortnite</i> danserna utantill. </p><br> <img id="bild" src="img/FortniteM.jpg" alt="">
         <div class="edit"><p>Edit</p></div>
     </div>
 </div>
 <div class="reklam" id="reklam">
     <p><i> Experterna hatar denna. Nu endast <b>399kr!</b> <br>Erbjudanted gäller i <u>59 minuter</u>  till. <br>Köp <b>NU</b> innan de tar slut!</i></p>
-    <div class="bort">X</div>
+    <div class="bort" onclick="bort()">X</div>
 </div>
 
-        </div>
+        </main>
     </div>
     <nav id="layout">
         
         <i class="material-icons" onclick="menu()" id="bort">clear</i>
         <ul >
-        <li><a href="home.html">Home Page</a></li>
+        <li><a href="index.html">Home Page</a></li>
         <li><a href="like.html">Like or Not</a></li>
         <li><a href="test.html">IQ-Quiz</a></li>
         <li><a href="profil.html">Profil</a></li>
         <li><a href="sms.html">Meddelanden</a></li>
         </ul>
     </nav>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
